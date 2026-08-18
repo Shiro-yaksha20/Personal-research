@@ -1,0 +1,29 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Obsidian - workspace state (ephemeral, per-device)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Obsidian - keep these committed (shared config across devices):
+#   .obsidian/app.json
+#   .obsidian/appearance.json
+#   .obsidian/community-plugins.json  (list of enabled plugins)
+#   .obsidian/core-plugins.json
+#   .obsidian/hotkeys.json
+#   .obsidian/templates/               (templates for Templater)
+#   .obsidian/plugins/                 (plugin configs, if you want them cross-device)
+
+# Local backups
+*.bak
+*.backup
+*.orig

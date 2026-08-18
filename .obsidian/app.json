@@ -1,0 +1,13 @@
+{
+  "promptDelete": true,
+  "attachmentFolderPath": "attachments",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "showFrontmatter": true,
+  "showInlineTitle": true,
+  "showLineNumber": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "readableLineLength": true,
+  "spellcheck": false
+}

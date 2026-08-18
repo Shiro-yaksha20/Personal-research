@@ -1,0 +1,420 @@
+
+========================================================================
+[01] Environment
+========================================================================
+OS               : Microsoft Windows NT 10.0.19045.0
+Is64BitProcess   : True
+UserInteractive  : True
+UserDomainName   : DESKTOP-4G89ULI
+IsAdmin (best-effort): False
+MachineName      : DESKTOP-4G89ULI
+ProcessorCount   : 4
+
+========================================================================
+[02] Cleanup modules — module info
+========================================================================
+- id=temp-files  name='Temporary Files'  quickSafe=True
+- id=browser-cache  name='Browser Cache'  quickSafe=True
+- id=diagnostic-data  name='Diagnostic Data'  quickSafe=True
+- id=large-files  name='Large Files'  quickSafe=False
+    warn: Review each file before deleting—large media or installers may still be needed.
+- id=duplicate-files  name='Duplicate Files'  quickSafe=False
+    warn: Only remove copies you are certain are safe to delete—originals are not automatically preserved.
+
+========================================================================
+[03] Cleanup scan — how much would each module clean?
+========================================================================
+- Temporary Files      items=   1  totalBytes=  754.4 MB
+     · User Temp  [  754.4 MB]  C:\Users\Shiro\AppData\Local\Temp\
+- Browser Cache        items=   2  totalBytes=  196.1 MB
+     · Microsoft Edge (Default)  [   20.4 MB]  C:\Users\Shiro\AppData\Local\Microsoft\Edge\User Data\Default\Cache
+     · Google Chrome (Default)  [  175.7 MB]  C:\Users\Shiro\AppData\Local\Google\Chrome\User Data\Default\Cache
+- Large Files          items=   5  totalBytes=    2.7 GB
+     · Downloads: openmediavault_8.3.1-amd64.iso  [    1.2 GB]  C:\Users\Shiro\Downloads\openmediavault_8.3.1-amd64.iso
+     · Downloads: Screen Recording 2026-06-22 103323.mp4  [  676.7 MB]  C:\Users\Shiro\Downloads\Screen Recording 2026-06-22 103323.mp4
+     · Downloads: LibreOffice_26.2.4_Win_x86-64.msi  [  355.3 MB]  C:\Users\Shiro\Downloads\LibreOffice_26.2.4_Win_x86-64.msi
+     · ... (2 more)
+- Duplicate Files      items=   4  totalBytes=   80.8 MB
+     · Downloads: query_engine-windows.dll.node  [   20.2 MB]  C:\Users\Shiro\Downloads\RenderMint-feature-v0-ui-import\RenderMint-feature-v0-ui-import\node_modules\@prisma\engines\query_engine-windows.dll.node
+     · Downloads: libquery-engine  [   20.2 MB]  C:\Users\Shiro\Downloads\RenderMint-feature-v0-ui-import\RenderMint-feature-v0-ui-import\node_modules\@prisma\engines\node_modules\.cache\prisma\master\c2990dca591cba766e3b7ef5d9e8a84796e47ab7\windows\libquery-engine
+     · Downloads: query_engine-windows.dll.node  [   20.2 MB]  C:\Users\Shiro\Downloads\RenderMint-feature-v0-ui-import\RenderMint-feature-v0-ui-import\node_modules\.prisma\client\query_engine-windows.dll.node
+     · ... (1 more)
+
+========================================================================
+[04] Startup discovery
+========================================================================
+Total entries: 10   Issues: 0
+
+- [ON ] Registry       Current User  Delete Cached Standalone Update Binary
+     cmd=C:\WINDOWS\system32\cmd.exe /q /c del /q "C:\Users\Shiro\AppData\Local\Microsoft\OneDrive\Standalone...
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\RunOnce  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\RunOnce  valueName=Delete Cached Standalone Update Binary
+- [ON ] Registry       Current User  Delete Cached Update Binary
+     cmd=C:\WINDOWS\system32\cmd.exe /q /c del /q "C:\Users\Shiro\AppData\Local\Microsoft\OneDrive\Update\One...
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\RunOnce  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\RunOnce  valueName=Delete Cached Update Binary
+- [ON ] Registry       Current User  Free Download Manager
+     cmd="C:\Program Files\Softdeluxe\Free Download Manager\fdm.exe" --hidden
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=Free Download Manager
+- [off] Registry       Current User  OneDrive
+     cmd="C:\Users\Shiro\AppData\Local\Microsoft\OneDrive\OneDrive.exe" /background
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=OneDrive
+- [ON ] Registry       All Users     RtHDVBg_PushButton
+     cmd="C:\Program Files\Realtek\Audio\HDA\RAVBg64.exe" /IM
+     hive=LocalMachine view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=RtHDVBg_PushButton
+- [ON ] Registry       All Users     RtHDVCpl
+     cmd="C:\Program Files\Realtek\Audio\HDA\RtkNGUI64.exe" /s
+     hive=LocalMachine view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=RtHDVCpl
+- [ON ] Registry       All Users     SecurityHealth
+     cmd=C:\WINDOWS\system32\SecurityHealthSystray.exe
+     hive=LocalMachine view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=SecurityHealth
+- [off] Registry       Current User  Spotify
+     cmd="C:\Users\Shiro\AppData\Roaming\Spotify\Spotify.exe" --autostart --minimized
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=Spotify
+- [ON ] Registry       Current User  Uninstall 26.129.0706.0003
+     cmd=C:\WINDOWS\system32\cmd.exe /q /c rmdir /s /q "C:\Users\Shiro\AppData\Local\Microsoft\OneDrive\26.12...
+     hive=CurrentUser view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\RunOnce  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\RunOnce  valueName=Uninstall 26.129.0706.0003
+- [ON ] Registry       All Users     WavesSvc
+     cmd="C:\Program Files\Waves\MaxxAudio\WavesSvc64.exe" -Jack
+     hive=LocalMachine view=Registry64 approvalView=Registry64
+     subKey=Software\Microsoft\Windows\CurrentVersion\Run  approvalSubKey=Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run  valueName=WavesSvc
+
+Toggle round-trip test on: Delete Cached Standalone Update Binary
+  Initial enabled state (from scan): True
+  Initial approval state (queried): 
+  Attempting to set enabled=False ...
+  Approval state AFTER toggle: False
+  Reverting to original state=True ...
+  Approval state after revert: True
+
+========================================================================
+[05] Installed software (uninstall inventory)
+========================================================================
+Applications  : 34
+Extensions    : 4
+Insights      : 1
+Issues        : 0
+
+First 5 applications with the fields the residual scan uses:
+- 7-Zip 26.01 (x64)  (Igor Pavlov) v26.01
+     installLocation : C:\Program Files\7-Zip\
+     uninstallString : "C:\Program Files\7-Zip\Uninstall.exe"
+     quietUninstall  : "C:\Program Files\7-Zip\Uninstall.exe" /S
+     productCode     : 
+     registryKeyPath : LocalMachine\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\7-Zip
+- Antigravity IDE (User)  (Google) v2.1.1
+     installLocation : C:\Users\Shiro\AppData\Local\Programs\Antigravity IDE\
+     uninstallString : "C:\Users\Shiro\AppData\Local\Programs\Antigravity IDE\unins000.exe"
+     quietUninstall  : "C:\Users\Shiro\AppData\Local\Programs\Antigravity IDE\unins000.exe" /SILENT
+     productCode     : 
+     registryKeyPath : CurrentUser\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{AA73B3E3-C6C8-45C8-B1DC-4AE56C751432}_is1
+- Brave  (Brave Software Inc) v151.1.93.134
+     installLocation : C:\Program Files\BraveSoftware\Brave-Browser\Application
+     uninstallString : "C:\Program Files\BraveSoftware\Brave-Browser\Application\151.1.93.134\Installer\setup.exe" --uninstall --system-level
+     quietUninstall  : 
+     productCode     : 
+     registryKeyPath : LocalMachine\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BraveSoftware Brave-Browser
+- Copilot  (Microsoft Corporation) v147.0.3912.98
+     installLocation : C:\Program Files (x86)\Microsoft\Copilot\Application
+     uninstallString : "C:\Program Files (x86)\Microsoft\Copilot\Application\147.0.3912.98\Installer\copilot_setup.exe" --uninstall --mscopilot...
+     quietUninstall  : 
+     productCode     : 
+     registryKeyPath : LocalMachine\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Copilot
+- Dell Command | Update  (Dell Inc.) v5.7.0
+     installLocation : C:\Program Files (x86)\Dell\CommandUpdate\
+     uninstallString : MsiExec.exe /X{96322198-2DBD-4C30-8BAA-E61A5340C663}
+     quietUninstall  : 
+     productCode     : 
+     registryKeyPath : LocalMachine\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{96322198-2DBD-4C30-8BAA-E61A5340C663}
+
+Residual token demo for 'Brave' — this shows the substring hazard:
+  Normalized token  : 'brave'  (length 5)
+  Anything with this substring under HKLM\SOFTWARE or the AppData roots would be flagged as residual.
+
+========================================================================
+[06] LibreHardwareMonitor — what actually enumerates on this box
+========================================================================
+- [Motherboard] Dell 00F6D3  (sensors: 0)
+- [Cpu] Intel Core i5-7300U  (sensors: 15)
+     · Clock       CPU Core #1                              = null
+     · Clock       CPU Core #2                              = null
+     · Temperature Core Average                             = null
+     · Temperature Core Max                                 = null
+     · Temperature CPU Core #1                              = null
+     · Temperature CPU Core #1 Distance to TjMax            = null
+     · Temperature CPU Core #2                              = null
+     · Temperature CPU Core #2 Distance to TjMax            = null
+     · Temperature CPU Package                              = null
+     · Load        CPU Core #1 Thread #1                    = 92.14
+     · Load        CPU Core #1 Thread #2                    = 93.59
+     · Load        CPU Core #2 Thread #1                    = 94.83
+     · Load        CPU Core #2 Thread #2                    = 93.48
+     · Load        CPU Core Max                             = 94.83
+     · Load        CPU Total                                = 93.51
+- [Memory] Generic Memory  (sensors: 6)
+     · Load        Memory                                   = 87.31
+     · Load        Virtual Memory                           = 57.06
+     · Data        Memory Available                         = 1.00
+     · Data        Memory Used                              = 6.88
+     · Data        Virtual Memory Available                 = 7.04
+     · Data        Virtual Memory Used                      = 9.35
+- [GpuIntel] Intel(R) HD Graphics 620  (sensors: 16)
+     · Load        D3D 3D                                   = 8.27
+     · Load        D3D Copy                                 = 0.00
+     · Load        D3D GDI Render                           = 0.00
+     · Load        D3D Other                                = 0.00
+     · Load        D3D Other                                = 0.00
+     · Load        D3D Other                                = 0.00
+     · Load        D3D Other                                = 0.00
+     · Load        D3D Other                                = 0.00
+     · Load        D3D Overlay                              = 0.00
+     · Load        D3D Video Decode                         = 0.00
+     · Load        D3D Video Decode                         = 0.00
+     · Load        D3D Video Processing                     = 0.00
+     · Load        D3D Video Processing                     = 0.00
+     · SmallData   D3D Shared Memory Free                   = null
+     · SmallData   D3D Shared Memory Total                  = 4036.52
+     · SmallData   D3D Shared Memory Used                   = 185.57
+- [Network] Bluetooth Network Connection  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet (Kernel Debugger)  (sensors: 5)
+     · Load        Network Utilization                      = NaN
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet 2  (sensors: 5)
+     · Load        Network Utilization                      = NaN
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet-WFP 802.3 MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Ethernet-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 1  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 1-Native WiFi Filter Driver-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 1-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 1-WFP 802.3 MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 1-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 10  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 10-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 10-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 2  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 2-Native WiFi Filter Driver-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 2-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 2-WFP 802.3 MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 2-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 7  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 8  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 8-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 8-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 9  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 9-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Local Area Connection* 9-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vEthernet (WSL)  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.06
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vEthernet (WSL)-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.06
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vEthernet (WSL)-WFP 802.3 MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.06
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vEthernet (WSL)-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.06
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vSwitch (WSL)  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] vSwitch (WSL)-Hyper-V Virtual Switch Extension Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.00
+     · Data        Data Uploaded                            = 0.00
+     · Throughput  Download Speed                           = 0.00
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1974.99
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi-Native WiFi Filter Driver-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1975.46
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi-QoS Packet Scheduler-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1975.92
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi-Virtual WiFi Filter Driver-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1976.44
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi-WFP 802.3 MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1977.03
+     · Throughput  Upload Speed                             = 0.00
+- [Network] Wi-Fi-WFP Native MAC Layer LightWeight Filter-0000  (sensors: 5)
+     · Load        Network Utilization                      = 0.00
+     · Data        Data Downloaded                          = 0.96
+     · Data        Data Uploaded                            = 0.05
+     · Throughput  Download Speed                           = 1977.61
+     · Throughput  Upload Speed                             = 0.00
+
+Done.
