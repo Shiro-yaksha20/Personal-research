@@ -2,6 +2,48 @@
 
 Plan-change history. Every time PLAN.md is meaningfully updated, log it here with the date, what changed, and which research/ADR triggered it.
 
+## 2026-08-19
+
+### Perplexity research wave integrated
+
+Six research briefs committed via GitHub (`0569c08`) from Perplexity, then reviewed and cross-referenced against the existing 4-persona critique.
+
+**New research files at `research/claude-main/`:**
+
+- `2026-08-19-meta-solo-dev-strategy-burnout.md`
+- `2026-08-19-trust-ux-principles.md`
+- `2026-08-19-ecosystem-kudu-pcmanager-cleaners-vt.md`
+- `2026-08-19-uninstaller-enterprise-roadmap.md`
+- `2026-08-19-positioning-weak-hardware-vt-refusals.md`
+- `2026-08-19-future-adrs-research-backlog.md`
+
+**New cross-review document:** `research/CROSS-REVIEW.md` — triangulates Perplexity findings against the 4-persona critique. Documents 5 convergences (high-confidence findings) and 5 divergences (judgment calls needed).
+
+**Four new ADRs proposed based on the Perplexity wave:**
+
+- ADR-0008 — Add Microsoft PC Manager to PLAN.md §5 competitive landscape (factual gap fill)
+- ADR-0009 — Adopt VirusTotal "confidence and context" presentation model (N of 72 engines + first-seen date + engine names + metadata, not a single-word verdict)
+- ADR-0010 — Explicit tone-of-voice guidelines: "good sysadmin explaining what they are about to do" not "optimizer promising miracles"
+- ADR-0011 — Release cadence and LTS strategy: 1 minor per quarter, semver, 24-month LTS backports
+
+**Existing ADRs referenced but not modified yet:**
+
+- ADR-0007 (positioning rewrite) will need an amendment reconciling the Perplexity + persona-critique disagreement on the refusal list (see CROSS-REVIEW.md §D1)
+
+**PLAN.md updates required if these ADRs are accepted:**
+
+- §5 Market position — add Microsoft PC Manager row
+- §7 Design principles — add VT presentation model + tone-of-voice principles
+- §11 Roadmap — align release cadence with ADR-0011
+
+None of the above are integrated into PLAN.md yet — they await Shiro's decision on Accept / Reject / Defer for each ADR.
+
+**Also updated:** `research/claude-main/INDEX.md` — now includes the 6 Perplexity briefs organized as a separate 2026-08-19 wave section.
+
+**README expanded** to include a full "project in one page" brief at the top.
+
+---
+
 ## 2026-08-18
 
 ### Initialized the R&D repo
